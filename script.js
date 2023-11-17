@@ -29,6 +29,8 @@ const main = async (city = "pune") => {
             weathericon.src = 'images/mist.png';
         } else if (data.weather[0].main == 'Rain') {
             weathericon.src = 'images/rain.png';
+        }else if(data.weather[0].main == 'Snow'){
+            weathericon.src = 'images/snow.png';
         }
         document.querySelector('.error').style.display = 'none';
         document.querySelector('.weather').style.display = "block"
